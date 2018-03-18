@@ -20,7 +20,7 @@ public class LinkList {
 
     }
 
-    //遍历输出列表
+    //遍历输出链表
     public  void printList(Node node){
         if(node == null){
             System.out.println("列表为空");
@@ -35,6 +35,20 @@ public class LinkList {
     }
 
 
+    //获取链表长度
+    public int getLength(Node head){
+    	if(head == null){
+    		System.out.println("列表为空");
+    		return 0;
+    	}
+    	int length = 0;
+    	current = head;
+    	while(current != null){
+    		length++;
+    		current = current.next;
+    	}
+    	return length;
+    }
     public static void main(String[] args) {
         LinkList linkList = new LinkList();
 //        linkList.addNode(1);
@@ -49,6 +63,7 @@ public class LinkList {
         }
         linkList.printList(linkList.head);
 
+        System.out.println(linkList.getLength(linkList.head));
 
     }
 }

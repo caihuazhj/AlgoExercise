@@ -1,4 +1,8 @@
 .idea/
 out/
 AlgoExercise.iml
+.project
+.settings
+bin/
+.classpath
 
