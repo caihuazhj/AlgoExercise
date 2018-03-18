@@ -1,8 +1,6 @@
 package linkList;
 
 
-import java.net.SocketPermission;
-
 public class LinkList {
 
     public Node head; //头节点
