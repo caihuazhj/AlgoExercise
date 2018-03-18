@@ -3,7 +3,7 @@ package stacks;
 import java.util.Stack;
 
 /**
- * ÓÃjavaÊµÏÖÕ»²Ù×÷
+ * æ ˆ
  * @author Administrator
  *
  */
