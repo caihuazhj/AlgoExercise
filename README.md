@@ -10,3 +10,4 @@
 链表
 
 addNode、printList、getLength
+merge、reverse、reversePrint
