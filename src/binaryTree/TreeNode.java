@@ -104,6 +104,9 @@ public class TreeNode {
         }
     }
     //前序遍历 非递归
+    //用栈实现 首先访问根结点，再访问左孩子，最后访问右孩子。在二叉树先序遍历非递归算法中，先将根结点压栈，在栈不为空的时候执行循环：
+//    让栈顶元素p出栈，访问栈顶元素p，如果p的右孩子不为空，则让其右孩子先进栈，如果p的左孩子不为空，则再让其左孩子进栈
+//    (注意：进栈顺序一定是先右孩子，再左孩子)。
     public static void  nonRecPreOrder(TreeNode subTree){
 
         Stack<TreeNode> stack = new Stack<TreeNode>();
@@ -114,7 +117,7 @@ public class TreeNode {
                 stack.push(node);
                 node = node.leftChild;
             }else {
-                node = stack.pop();  //栈！
+                node = stack.pop();  //remove top object 返回顶部对象
                 node = node.rightChild;
             }
         }

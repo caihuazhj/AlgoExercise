@@ -1,7 +1,5 @@
 package binaryTree;
 
-import linkList.Node;
-
 import java.util.Arrays;
 
 public class BSTree {
@@ -111,14 +109,8 @@ public class BSTree {
     }
 
     public static void main(String[] args) {
-        int[] values = new int[8];
-        for (int i = 0; i < 8; i++) {
-            int num = (int) (Math.random() * 15);
-            if (!checkDup(values, num))
-                values[i] = num;
-            else
-                i--;
-        }
+        int[] values = {2,  9, 10, 7, 5, 6, 4};
+
         System.out.println("generate Nums:" + Arrays.toString(values));
 
         BSTree tree = new BSTree(new TreeNode(values[0]));
@@ -126,14 +118,15 @@ public class BSTree {
             tree.add(values[i]);
         }
 
+
         System.out.println("树高: " + TreeNode.getHeight(tree.getRoot()));
         System.out.println("树大小: " + TreeNode.getSize(tree.getRoot()));
         System.out.println("前序遍历:");
         TreeNode.nonRecPreOrder(tree.getRoot());
-        System.out.println("中序遍历:");
-        TreeNode.nonRecInOrder(tree.getRoot());
-        System.out.println("后序遍历:");
-        TreeNode.nonRecPostOrder(tree.getRoot());
+//        System.out.println("中序遍历:");
+//        TreeNode.nonRecInOrder(tree.getRoot());
+//        System.out.println("后序遍历:");
+//        TreeNode.nonRecPostOrder(tree.getRoot());
     }
     private static boolean checkDup(int[] arr, int value) {
         for (int i = 0; i < arr.length; i++) {
