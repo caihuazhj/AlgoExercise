@@ -8,6 +8,7 @@
 栈
 
 链表
+
 Node、addNode、printList、getLength
 merge、reverse、reversePrint
 removeNthFromEnd
