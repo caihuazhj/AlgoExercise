@@ -1,7 +1,4 @@
-package Interview;
-
-import javafx.beans.binding.When;
-import jdk.nashorn.internal.ir.WhileNode;
+package interviewExercise;
 
 import java.util.Scanner;
 

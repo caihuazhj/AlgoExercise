@@ -1,4 +1,4 @@
-package pinduoduo;
+package interviewExercise.pinduoduo;
 
 import java.util.Scanner;
 

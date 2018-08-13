@@ -1,7 +1,6 @@
-package huawei.年2017;
+package interviewExercise.huawei.年2017;
 
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
 
 public class MingMingDeRandom {
     public static void main(String[] args) {

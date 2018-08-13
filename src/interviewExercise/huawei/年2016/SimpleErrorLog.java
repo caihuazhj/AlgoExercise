@@ -1,6 +1,5 @@
-package huawei.年2016;
+package interviewExercise.huawei.年2016;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class SimpleErrorLog {

@@ -1,4 +1,4 @@
-package huawei.年2017;
+package interviewExercise.huawei.年2017;
 
 import java.util.Scanner;
 

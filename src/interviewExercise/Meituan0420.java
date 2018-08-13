@@ -1,4 +1,4 @@
-package Interview;
+package interviewExercise;
 
 import java.util.Scanner;
 

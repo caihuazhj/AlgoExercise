@@ -1,7 +1,4 @@
-package huawei.年2016;
-
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-import sun.java2d.pipe.SpanIterator;
+package interviewExercise.huawei.年2016;
 
 import java.util.Scanner;
 
