@@ -196,6 +196,21 @@ public class LinkList {
         //当n为偶数时，得到的中间结点是第n/2 + 1个结点。
         return first;
     }
+
+    public static boolean isCycle(Node head){
+        Node first = head;
+        Node second = head;
+
+        while (second!=null){
+            first = first.next;
+            second = second.next.next;
+
+            if (first==second){
+                return true;
+            }
+        }
+        return false;
+    }
     public static void main(String[] args) {
         LinkList linkList = new LinkList();
 //        linkList.addNode(1);
